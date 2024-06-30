@@ -20,7 +20,7 @@ jobs:
         run: msbuild /t:rebuild /p:Configuration=Release .\FFXIVZoomHack.sln /p:RestorePackagesConfig=true
 
       - name: Archive build artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: "FFXIVZoomHack.exe"
           path: "FFXIVZoomHack\\bin\\Release\\FFXIVZoomHack.exe"
