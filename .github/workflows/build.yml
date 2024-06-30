@@ -17,7 +17,7 @@ jobs:
           msbuild-architecture: x64
 
       - name: Build release application
-        run: msbuild /t:rebuild /p:Configuration=Release .\FFXIVZoomHack.sln /p:RestorePackagesConfig=true
+        run: msbuild /t:rebuild /p:Configuration=Release .\FFXIVZoomHack.sln
 
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
